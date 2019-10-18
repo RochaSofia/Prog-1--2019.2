@@ -2,7 +2,7 @@
 #Programação 1 - 2019.2
 #Juan Salvador da Silva -119210821
 #Posições de um elemento em uma sequência
-
+'''
 n = int(input())
 sequencia = input().split()
 nvezes = []
@@ -20,6 +20,30 @@ if len(nvezes) > 0:
             print(nvezes[j])
 else:
     print("-1")
+'''
+
+#Outra forma de fazer a mesma questão 
+
+num=input()
+sequencia=input().split()
+igual=False
+
+
+x=''
+
+
+for i in range(len(sequencia)):
+	if sequencia[i]== num :
+		x+= str(i) + " "
+		igual= True
+
+x=x[:len(x)-1]
+if igual== True:
+	print(x)
+	
+else:
+	print('-1')
+
 
 
 
